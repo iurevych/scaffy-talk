@@ -35,7 +35,6 @@
       <div class="slides">
         <section>
           <p>&nbsp;</p>
-          <p>&nbsp;</p>
           <h1>Modular CSS</h1>
           <h3 class="inverted">for large-scale projects</h3>
           <p><strong>Sergii Iurevych</strong></p>
@@ -43,7 +42,7 @@
             <strong><a href="http://twitter.com/iurevych">@iurevych</a></strong>
           </p>
           <p>
-            <strong><a href="http://github.com/iurevych">iurevych</a></strong>
+            <strong><a href="http://github.com/iurevych">github.com/iurevych</a></strong>
           </p>
           <script>
             // Delicously hacky. Look away.
@@ -124,11 +123,6 @@
 
         <section>
           <h1><br /><br />Here's how it looks</h1>
-          <!--
-          <pre><code>
-          </code></pre>
-          Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>
-          -->
         </section>
 
         <section>
@@ -152,6 +146,62 @@
           </ul>
         </section>
 
+        <section>
+          <p>&nbsp;</p>
+          <h1>Library</h1>
+          <ul>
+            <li>
+              <p>Groups of similar objects</p>
+            </li>
+            <li>
+              <p>Frequently used small objects</p>
+            </li>
+          </ul>
+          <p>&nbsp;</p>
+          <h3>Make it shared or separate if needed</h3>
+        </section>
+
+        <section>
+          <p>&nbsp;</p>
+          <h1>Modules</h1>
+          <ul>
+            <li>
+              <p>Unique UI components</p>
+            </li>
+            <li>
+              <p>Can have a logical states</p>
+            </li>
+          </ul>
+          <p>&nbsp;</p>
+          <h3>Make them shared or separate if needed</h3>
+        </section>
+
+        <section>
+          <pre><code class="css"><span class="class">.player</span>
+  position: relative
+
+  <span class="comment">// State aka modifier</span>
+  <span class="class">&.is-busy
+    .player-avatar</span>
+      opacity: <span class="number">.2</span>
+
+<span class="comment">// Sub-module</span>
+<span class="class">.player-avatar</span>
+  float: left</code></pre>
+        </section>
+
+        <section>
+          <h1>Learn Scaffy</h1>
+          <p>
+              <h2><a href="http://railsware.github.com/scaffy" target="_blank">railsware.github.com/scaffy</a></h2>
+          </p>
+          <p>&nbsp;</p>
+          <h1>Demo</h1>
+          <p>
+              <h2><a href="http://railsware.github.com/scaffy/futurico/" target="_blank">railsware.github.com/scaffy/futurico</a></h2>
+          </p>
+        </section>
+
       </div>
 
       <!-- The navigational controls UI -->
@@ -170,7 +220,7 @@
     <script src="js/reveal.js"></script>
 
     <!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
-    <script src="lib/highlight.js"></script>
+    <!-- <script src="lib/highlight.js"></script> -->
     <script src="lib/classList.js"></script>
 
     <script>
